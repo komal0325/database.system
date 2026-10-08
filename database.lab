@@ -1,0 +1,64 @@
+create database basic_data;
+
+USE basic_data ;
+
+CREATE TABLE Student (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE
+);
+
+INSERT INTO Student
+VALUES
+(1, 'bharat', 'bharat@gmail.com'),
+(2, 'bhusan', 'bhushan@gmail.com'),
+(3, 'sunil', 'sunil@gmail.com'),
+(4, 'ravi', 'ravi@gmail.com'),
+(6, 'anana', 'anana@gmail.com'),
+(7, 'abbuor', 'abbuor@gmail.com'),
+(8, 'aalu', 'aalu@gmail.com'),
+(9, 'appo', 'appo@gmail.com'),
+(10, 'aaaa', 'aaaa@gmail.com'),
+(11, 'radhika', 'radhika@gmail.com');
+
+
+
+SELECT * FROM student 
+where name LIKE 'a%';
+
+SELECT * FROM student 
+where name LIKE '%a';
+
+SELECT * FROM student 
+where name LIKE "%or%";
+
+SELECT * FROM student 
+where name LIKE "r%";
+
+SELECT * FROM student 
+where name LIKE "a_%";
+
+SELECT * FROM student 
+where name LIKE 'a__%';
+
+SELECT * FROM student 
+where name LIKE 'a%o';
+
+
+SELECT * FROM student 
+where name LIKE 'a%';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
